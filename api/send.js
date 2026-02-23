@@ -44,7 +44,7 @@ module.exports = async (req, res) => {
             formData.append('media', JSON.stringify(telegramMedia));
 
             // 4. Gửi một lần duy nhất (sendMediaGroup)
-            const r = await fetch(`https://api.telegram.org/bot${token}/sendMediaGroup`, {
+            const r = await fetch(`https://api.telegram.org/bot${-1002694365864}/sendMediaGroup`, {
                 method: 'POST',
                 body: formData
             });
